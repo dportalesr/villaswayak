@@ -1,0 +1,393 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,700,900);
+
+body {
+	margin-top: 0px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+	background:#000;
+	font-family: 'Lato', sans-serif;
+}
+
+.full-width-image-1 {
+	background: url(../images/black1.jpg) #000 no-repeat center center;
+	background-size: cover;
+	min-height:931px;
+	height:auto !important;
+	text-align: center;
+	
+}
+.form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 0px;
+        background-color: #fff;
+    
+     ;
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 0px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 9px;
+        height: auto;
+        margin-bottom: 0px;
+        padding: 7px 0px;
+      }
+.full-width-image-2 {
+	
+	background-size: cover;
+	text-align: center;
+	height: 355px;
+}
+.borderless {
+ border:none;
+}
+
+
+.logo-wrapper {
+	display: inline-block;
+}
+
+.section {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.section-heading {
+	font-size: 4em;
+	margin: 0px auto;
+	text-align:center
+}
+
+.section-lead {
+	margin: 30px 0;
+}
+
+.section-paragraph {
+	margin: 30px 0;
+	color:#FFF;
+	font-weight:100;
+	font-size:22px
+}
+.container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+	    /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+     
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+	  
+	  
+
+footer {
+	margin: 50px 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+
+
+.section-heading {
+	font-size: 2em;
+}
+
+.section {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+}
+
+
+
+
+
+#tickets{
+	background:#00a8bd;
+	position:relative;
+	}
+#carrucel{
+	background:#000;
+	position:relative;
+	}
+#schedule{
+	background:#bb1d6d;
+	position:relative;
+
+	}
+#contacto{
+	position:relative;
+	background:#000;
+	}
+#patrosinadores{
+	background:#000;
+	position:relative;
+	}
+#folleto{
+	background:#efa92a;
+	position:relative;
+	
+	}	
+	.centering {
+  float:none;
+  margin:0 auto;
+}	
+	
+.control-group.center{ float:none;margin:0 auto;width:400px;margin-bottom:20px;}
+.control-group .field {width:210px;float:left}
+.control-group .l {width:183px;float:left;line-height: 29px; height:29px;position:relative }
+.row-fluid .offset4{
+    display: block!important;
+    float: none!important;
+    width: 100%!important;
+    margin-left: 0!important;
+    padding:0 80px;
+}
+@media (max-width: 497px){
+    .control-group.center {text-align: center;float:inherit;width: auto}
+    .control-group .field,.control-group .l {width:220px;float:none;text-align: center;width: auto; }
+
+.full-width-image-1 {
+	background:  #000 no-repeat center center;
+	background-size: cover;
+	min-height:700px;
+	height:auto !important;
+	text-align: center;
+	
+}
+
+.section-paragraph {
+
+	font-weight:300;
+	
+}
+
+.fontz{
+	
+	font-weight:300;}
+	
+}
+	
+	.borderless{
+		border:none;
+		}	
+		
+		
+		.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+  width:80%; 
+}
+
+.center { float: none; margin-left: auto; margin-right: auto; }		
+.lista{ font-weight:100; color:#FFF; font-size:22px; }
+#enviar{
+	width:120px;
+	height:31px;
+	color:#FFF;
+	background:#fba62a;
+	border:hidden;
+	float:right;
+
+	}
+ .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+	  
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+	 
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+		margin-right:15px;
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px;/* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+     
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+
+    }
+	
+	/* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 0px;
+      }
+	  .section-paragraph {
+
+	font-weight:300;
+	
+}
+
+.fontz{
+	
+	font-weight:300;}
+	
+	  
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: 0px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+	  .span7 {
+		  padding-left:15px;
+		  padding-right:15px;
+  
+}
+
+.tic{
+		  padding-left:15px;
+		  padding-right:15px;
+  
+}
+.section-paragraph {
+
+	font-weight:300;
+	
+}
+
+.fontz{
+	
+	font-weight:300;}
+	.small{
+		font-size:14px;
+		}
+		#txtmail{
+			width:150px;
+			}
+			#txtnombre{
+			width:150px;
+			}
+			#txtabout{
+			width:150px;
+			}
+		
+	}
+	.links{
+		text-decoration:none;
+		color:#FFF;
+		}
+	.links:hover	
+	{
+		text-decoration:none;
+		color:#FFF;}
+	
+	#nuevo{ font-size:14px; color:#FFF }
+	#about{font-size:14px; color:#FFF  margin-top:0px}
+	 @media all and (-webkit-min-device-pixel-ratio: 0){ #nuevo{ font-size:14px; color:#FFF  margin-top:20px}#about{font-size:14px; color:#FFF  margin-top:0px}.control-group .l {width:183px;float:left;line-height: 29px; height:29px; margin-top:15pxposition:relative } }

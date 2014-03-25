@@ -1,0 +1,1 @@
+[19-Jan-2014 17:34:08 America/Mexico_City] PHP Warning:  htmlspecialchars() [<a href='http://php.net/function.htmlspecialchars'>function.htmlspecialchars</a>]: Invalid multibyte sequence in argument in /home/villaswa/public_html/cake/basics.php on line 221

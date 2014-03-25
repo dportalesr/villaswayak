@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mighty - Premium Admin Panel</title>
+        <meta name="description" content="Mighty - Premium Admin Panel" />
+        <meta name="author" content="Lucas Pelegrino" />
+        <meta name="keywords" content="mighty admin, admin, themeforest, panel, administrator, theme, template, html template" />
+
+        <!-- Optimized mobile viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/icomoon.css" />
+        <link rel="stylesheet" href="./css/websymbols.css" />
+        <link rel="stylesheet" href="./css/formalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/theme-blue.css" />
+        <link rel="stylesheet" href="./plugins/chosen/chosen.css" />
+        <link rel="stylesheet" href="./plugins/ui/ui-custom.css" />
+        <link rel="stylesheet" href="./plugins/tipsy/tipsy.css" />
+        <link rel="stylesheet" href="./plugins/validationEngine/validationEngine.jquery.css" />
+        <link rel="stylesheet" href="./plugins/elrte/css/elrte.min.css" />
+        <link rel="stylesheet" href="./plugins/miniColors/jquery.miniColors.css" />
+        <link rel="stylesheet" href="./plugins/fullCalendar/fullcalendar.css" />
+        <link rel="stylesheet" href="./plugins/elfinder/css/elfinder.css" />
+        <link rel="stylesheet" href="./plugins/farbtastic/farbtastic.css" />
+
+        <!-- JAVASCRIPTs -->
+        <!--[if lt IE 9]>
+            <script language="javascript" type="text/javascript" src="./js/html5shiv.js"></script>
+        <![endif]-->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/browserDetect.js"></script>
+        <script src="./js/jquery.formalize.min.js"></script>
+        <script src="./js/less.js"></script>
+        <script src="./js/jquery.watch.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/demo.js"></script>
+        <script src="./js/respond.min.js"></script>
+        <script src="./plugins/prefixfree.min.js"></script>
+        <script src="./plugins/jquery.uniform.min.js"></script>
+        <script src="./plugins/jquery.window-modal.js"></script>
+        <script src="./plugins/chosen/chosen.jquery.min.js"></script>
+        <script src="./plugins/ui/ui-custom.js"></script>
+        <script src="./plugins/ui/multiselect/js/ui.multiselect.js"></script>
+        <script src="./plugins/ui/ui.spinner.min.js"></script>
+        <script src="./plugins/datables/jquery.dataTables.min.js"></script>
+        <script src="./plugins/jquery.metadata.js"></script>
+        <script src="./plugins/progressbar.js"></script>
+        <script src="./plugins/feedback.js"></script>
+        <script src="./plugins/farbtastic/farbtastic.js"></script>
+        <script src="./plugins/tipsy/jquery.tipsy.js"></script>
+        <script src="./plugins/jquery.maskedinput-1.3.min.js"></script>
+        <script src="./plugins/jquery.validate.min.js"></script>
+        <script src="./plugins/validationEngine/languages/jquery.validationEngine-en.js"></script>
+        <script src="./plugins/validationEngine/jquery.validationEngine.js"></script>
+        <script src="./plugins/jquery.elastic.js"></script>
+        <script src="./plugins/elrte/elrte.min.js"></script>
+        <script src="./plugins/miniColors/jquery.miniColors.min.js"></script>
+        <script src="./plugins/fullCalendar/fullcalendar.min.js"></script>
+        <script src="./plugins/elfinder/elfinder.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body class="fixed fixed-topbar"><!-- .fixed or .fluid -->
+		<div id="wrapper">
+			<section id="top">
+				<header>
+					<nav id="menu-bar">
+						<ul>
+							<li>
+								<a href="#">Notifications <span class="note">7</span></a>
+							</li>
+							<li class="with-submenu">
+								<a href="#">System settings</a>
+								<nav class="submenu">
+									<ul>
+										<li><a href="#">Maintenance Mode</a></li>
+										<li><a href="#">General Settings</a></li>
+										<li><a href="#">SEO configurations</a></li>
+									</ul>
+								</nav>
+							</li>
+							<!-- .keep makes the element aways visible (even in smaller screens) -->
+							<li class="keep"><a href="./login.php.html" class="bold">Logout</a></li>
+							<li class="keep"><a href="#" class="bt-alt"><span>visit website »</span></a></li>
+						</ul>
+					</nav>
+				</header>
+			</section>
+			<section id="page">
+				<aside id="sidebar">
+					<div id="logo">
+						<a href="./index.php.html"><img src="./images/logo.png" alt="Mighty Admin" /></a>
+					</div>
+					<div class="menus">
+						<!-- menu #1 -->
+						<nav>
+							<h2>Main Menu</h2>
+							
+							<ul>
+								<li>
+									<a href="./index.php.html">
+										<i class="glyph-cloud"></i>
+										<div class="label">Dashboard</div>
+									</a>
+								</li>
+								<li>
+									<a href="./grid-system.php.html">
+										<i class="icon-grid-view"></i>
+										<div class="label">Grid System</div>
+									</a>
+								</li>
+								<li>
+									<a href="./typography.php.html">
+										<i class="icon-font"></i>
+										<div class="label">Typography</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="glyph-attachment"></i>
+										<div class="label">Submenu example</div>
+									</a>
+
+									<!-- submenu -->
+									<nav>
+										<ul>
+											<li><a href="#">Subitem item 1</a></li>
+											<li class="active"><a href="#">Subitem item 2</a></li>
+											<li><a href="#">Subitem item 3</a></li>
+										</ul>
+									</nav>
+								</li>
+							</ul>
+						</nav>
+						<!-- /menu -->
+						
+						<!-- menu #2 -->
+						<nav>
+							<h2>Secondary Menu</h2>
+							
+							<ul>
+								<li>
+									<a href="#">
+										<i class="icon-clipboard"></i>
+										<div class="label">Form</div>
+									</a>
+
+									<!-- submenu -->
+									<nav>
+										<ul>
+											<li><a href="./form-elements.php.html">Form Elements</a></li>
+											<li><a href="./form-validation.php.html">Form Validation</a></li>
+											<li><a href="./form-miscellaneous.php.html">Form Miscellaneous</a></li>
+										</ul>
+									</nav>
+								</li>
+								<li>
+									<a href="#">
+										<i class="glyph-list-2"></i>
+										<div class="label">Tables</div>
+									</a>
+
+									<!-- submenu -->
+									<nav>
+										<ul>
+											<li><a href="./regular-table.php.html">Regular Table</a></li>
+											<li><a href="./interactive-table.php.html">Interactive Table</a></li>
+										</ul>
+									</nav>
+								</li>
+								<li>
+									<a href="./gallery.php.html">
+										<i class="glyph-image"></i>
+										<div class="label">Gallery</div>
+									</a>
+								</li>
+								<li>
+									<a href="./notifications.php.html">
+										<i class="icon-bell-3"></i>
+										<div class="label">Notifications</div>
+									</a>
+								</li>
+								<li>
+									<a href="./buttons.php.html">
+										<i class="icon-box-add"></i>
+										<div class="label">Buttons</div>
+									</a>
+								</li>
+								<li class="active">
+									<a href="./icons.php.html">
+										<i class="glyph-icon"></i>
+										<div class="label">Icons</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- /menu -->
+
+						<!-- menu #3 -->
+						<nav>
+							<h2>Miscellaneous</h2>
+							
+							<ul>
+								<li>
+									<a href="./miscellaneous.php.html">
+										<i class="icon-cube"></i>
+										<div class="label">Miscellaneous</div>
+									</a>
+								</li>
+								<li>
+									<a href="./file-manager.php.html">
+										<i class="glyph-folder"></i>
+										<div class="label">File Manager</div>
+									</a>
+								</li>
+								<li>
+									<a href="./calendar.php.html">
+										<i class="icon-calendar"></i>
+										<div class="label">Calendar</div>
+									</a>
+								</li>
+								<li>
+									<a href="./error-page.php.html">
+										<i class="icon-cancel-3"></i>
+										<div class="label">Error Page</div>
+									</a>
+								</li>
+								<li>
+									<a href="./dynamic-binding.php.html">
+										<i class="icon-broadcast"></i>
+										<div class="label">Dynamic Binding</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- /menu -->
+					</div>
+				</aside>
+				<section id="content">
+					<section id="content-top">
+						<div class="search-field-entry">
+							<input type="text" placeholder="Search" />
+							<input type="submit" class="search-button" value="L" /><!-- L is the glyph for the search icon -->
+						</div>
+						
+						<nav class="quick-actions">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="glyph-attachment"></i>
+									</a>
+								</li>
+								<li class="with-submenu">
+									<a href="#">
+										<i class="glyph-favorite"></i>
+									</a>
+									<nav class="submenu">
+										<ul>
+											<li><a href="#">Subitem 1</a></li>
+											<li><a href="#">Subitem 2</a></li>
+											<li><a href="#">Subitem 6</a></li>
+										</ul>
+									</nav>
+								</li>
+								<li>
+									<a href="#">
+										<i class="glyph-settings"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="glyph-search"></i>
+									</a>
+								</li>
+								<li class="alt with-submenu">
+									<nav>
+										<ul>
+											<li><a href="#">account settings</a></li>
+											<li class="active"><a href="#">edit profile</a></li>
+											<li><a href="#">balance</a></li>
+										</ul>
+									</nav>
+								</li>
+							</ul>
+						</nav>
+					</section>
+					<div class="cf"></div>
+					<section id="pane">
+						<header>
+							<h1>Icons</h1>
+							<nav class="breadcrumbs">
+								<ul>
+									<li class="alt"><a href="#"><i class="icon-home"></i></a></li>
+									<li><a href="#">Users</a></li>
+									<li><a href="#">Account settings</a></li>
+									<li><a href="#">Payment options</a></li>
+								</ul>
+							</nav>
+						</header>
+						<div id="pane-content">
+													<div class="g4 space-bottom-30">
+								<h2>Bitmap icons</h2>
+								<div class="msg-box informative closeable">3+ thousands bitmap <a href="http://p.yusukekamiyamane.com/" target="_blank">fugue icons</a> avaliable!</div>
+								<div>
+									<i class="fugue arrow-045"></i>
+									<i class="fugue folder-open-feed"></i>
+									<i class="fugue dummy-sad"></i>
+									<i class="fugue disk--arrow"></i>
+									<i class="fugue key--pencil"></i>
+									<i class="fugue magnifier-medium-left"></i>
+									<i class="fugue futon"></i>
+									<i class="fugue fruit-orange"></i>
+									<i class="fugue folder-medium"></i>
+									<i class="fugue layer--minus"></i>
+									<i class="fugue subversion"></i>
+									<i class="fugue pencil--arrow"></i>
+									<i class="fugue bean-small"></i>
+									<i class="fugue receipts-text"></i>
+									<i class="fugue resource-monitor-protector"></i>
+									<i class="fugue currency"></i>
+									<i class="fugue clock--pencil"></i>
+									<i class="fugue control-double-180"></i>
+									<i class="fugue paper-plane--arrow"></i>
+									<i class="fugue table-insert-row"></i>
+									<i class="fugue direction--arrow"></i>
+									<i class="fugue folder-zipper"></i>
+									<i class="fugue printer"></i>
+									<i class="fugue screwdriver--pencil"></i>
+									<i class="fugue blue-document-sub"></i>
+									<i class="fugue document-image"></i>
+									<i class="fugue information-octagon-frame"></i>
+									<i class="fugue new"></i>
+									<i class="fugue arrow-circle-double"></i>
+									<i class="fugue ear-right"></i>
+									<i class="fugue blue-folder-open-document-text"></i>
+									<i class="fugue point-silver"></i>
+									<i class="fugue service-bell--pencil"></i>
+									<i class="fugue jar--plus"></i>
+									<i class="fugue blue-folder"></i>
+									<i class="fugue playing-card"></i>
+									<i class="fugue table-select-all"></i>
+									<i class="fugue cup"></i>
+									<i class="fugue money--exclamation"></i>
+									<i class="fugue sort-number-descending"></i>
+									<i class="fugue blue-folder-broken"></i>
+									<i class="fugue mail--pencil"></i>
+									<i class="fugue control-270-small"></i>
+									<i class="fugue smiley-small"></i>
+									<i class="fugue rocket-fly"></i>
+									<i class="fugue television-off"></i>
+									<i class="fugue battery-low"></i>
+									<i class="fugue table-insert-row"></i>
+									<i class="fugue prohibition-button"></i>
+									<i class="fugue cross-small"></i>
+									<i class="fugue monitor"></i>
+									<i class="fugue receipt--arrow"></i>
+									<i class="fugue dummy-sad"></i>
+									<i class="fugue blue-document-attribute-j"></i>
+									<i class="fugue blue-folder-open-document-text"></i>
+									<i class="fugue money--exclamation"></i>
+									<i class="fugue globe"></i>
+									<i class="fugue document-block"></i>
+									<i class="fugue binocular--arrow"></i>
+									<i class="fugue compile-warning"></i>
+									<i class="fugue exclamation-small-red"></i>
+									<i class="fugue globe-small"></i>
+									<i class="fugue magnet"></i>
+									<i class="fugue script-attribute-b"></i>
+									<i class="fugue arrow-turn-180-left"></i>
+									<i class="fugue headstone-cross"></i>
+									<i class="fugue control-stop-square-small"></i>
+									<i class="fugue arrow-transition-180"></i>
+									<i class="fugue network-status-offline"></i>
+									<i class="fugue socket--plus"></i>
+									<i class="fugue car"></i>
+									<i class="fugue bookmark--exclamation"></i>
+									<i class="fugue building-hedge"></i>
+									<i class="fugue inbox-slide"></i>
+									<i class="fugue application-sidebar"></i>
+									<i class="fugue sort-rating-descending"></i>
+									<i class="fugue stamp"></i>
+									<i class="fugue application-import"></i>
+									<i class="fugue pencil-color"></i>
+									<i class="fugue exclamation-octagon-frame"></i>
+									<i class="fugue monitor-off"></i>
+									<i class="fugue cake--exclamation"></i>
+									<i class="fugue application-dock"></i>
+									<i class="fugue home-medium"></i>
+									<i class="fugue script-attribute-y"></i>
+									<i class="fugue magnifier-zoom-fit"></i>
+									<i class="fugue spectacle-small"></i>
+									<i class="fugue drawer--minus"></i>
+									<i class="fugue chain--exclamation"></i>
+									<i class="fugue camera--minus"></i>
+									<i class="fugue application-tile"></i>
+									<i class="fugue paper-bag--pencil"></i>
+									<i class="fugue car--arrow"></i>
+									<i class="fugue folder-open-slide"></i>
+									<i class="fugue film-timeline"></i>
+									<i class="fugue point--arrow"></i>
+									<i class="fugue marker--plus"></i>
+									<i class="fugue document-break"></i>
+									<i class="fugue regular-expression-delimiter"></i>
+									<i class="fugue car--plus"></i>
+									<i class="fugue scanner"></i>
+									<i class="fugue database-import"></i>
+									<i class="fugue blueprint--plus"></i>
+									<i class="fugue database--minus"></i>
+									<i class="fugue mahjong-white"></i>
+									<i class="fugue document-copy"></i>
+									<i class="fugue blue-document-attribute-r"></i>
+									<i class="fugue printer-network"></i>
+									<i class="fugue door--arrow"></i>
+									<i class="fugue sticky-note--pencil"></i>
+									<i class="fugue plus-shield"></i>
+									<i class="fugue rocket--arrow"></i>
+									<i class="fugue table-sheet"></i>
+									<i class="fugue tick-octagon-frame"></i>
+									<i class="fugue node-delete-previous"></i>
+									<i class="fugue blue-document-sub"></i>
+									<i class="fugue media-player-xsmall-polish"></i>
+									<i class="fugue application-dock-tab"></i>
+									<i class="fugue application-wave"></i>
+									<i class="fugue ticket--minus"></i>
+									<i class="fugue document-attribute-r"></i>
+									<i class="fugue telephone-handset"></i>
+									<i class="fugue crown--minus"></i>
+									<i class="fugue arrow-switch-090"></i>
+									<i class="fugue door--plus"></i>
+									<i class="fugue database-share"></i>
+									<i class="fugue mobile-phone-medium"></i>
+									<i class="fugue layer-shape-round"></i>
+									<i class="fugue leaf--arrow"></i>
+									<i class="fugue balance--minus"></i>
+									<i class="fugue navigation-180"></i>
+									<i class="fugue compass--arrow"></i>
+									<i class="fugue database-import"></i>
+									<i class="fugue media-player-medium-black"></i>
+									<i class="fugue flask--pencil"></i>
+									<i class="fugue document-block"></i>
+									<i class="fugue edit-small-caps"></i>
+									<i class="fugue arrow-curve-180-double"></i>
+									<i class="fugue leaf--minus"></i>
+									<i class="fugue image-saturation-up"></i>
+									<i class="fugue card-address"></i>
+									<i class="fugue notebook--pencil"></i>
+									<i class="fugue book-open-list"></i>
+									<i class="fugue at-sign"></i>
+									<i class="fugue layout-header-2-equal"></i>
+									<i class="fugue mail--arrow"></i>
+									<i class="fugue present--minus"></i>
+									<i class="fugue mahjong--plus"></i>
+									<i class="fugue script"></i>
+									<i class="fugue clipboard-invoice"></i>
+									<i class="fugue hand-finger"></i>
+									<i class="fugue feed-small"></i>
+									<i class="fugue script-block"></i>
+									<i class="fugue layer-shape"></i>
+									<i class="fugue tick-button"></i>
+									<i class="fugue clapperboard--pencil"></i>
+									<i class="fugue sticky-note--plus"></i>
+									<i class="fugue arrow-stop"></i>
+									<i class="fugue clipboard--exclamation"></i>
+									<i class="fugue clock-frame"></i>
+									<i class="fugue store-open"></i>
+									<i class="fugue media-player-small-pink"></i>
+									<i class="fugue tag-label-black"></i>
+									<i class="fugue broom--exclamation"></i>
+									<i class="fugue cake--exclamation"></i>
+									<i class="fugue script-flash"></i>
+									<i class="fugue blue-folder-medium"></i>
+									<i class="fugue clipboard-paste"></i>
+									<i class="fugue lifebuoy--arrow"></i>
+									<i class="fugue layout-hf-2"></i>
+									<i class="fugue fill-270"></i>
+									<i class="fugue box"></i>
+									<i class="fugue fill-medium"></i>
+									<i class="fugue document-page"></i>
+									<i class="fugue table-paint-can"></i>
+									<i class="fugue brain--exclamation"></i>
+									<i class="fugue locale"></i>
+									<i class="fugue blue-documents"></i>
+									<i class="fugue camera--pencil"></i>
+									<i class="fugue ticket-stub"></i>
+									<i class="fugue edit-heading-4"></i>
+									<i class="fugue drill--pencil"></i>
+									<i class="fugue documents"></i>
+									<i class="fugue question-small-white"></i>
+									<i class="fugue node-design"></i>
+									<i class="fugue balloon-buzz-left"></i>
+									<i class="fugue application"></i>
+									<i class="fugue direction--plus"></i>
+									<i class="fugue screwdriver--plus"></i>
+									<i class="fugue media-players"></i>
+									<i class="fugue camera--exclamation"></i>
+									<i class="fugue screwdriver--arrow"></i>
+									<i class="fugue mail-send"></i>
+									<i class="fugue blue-document-attribute-c"></i>
+									<i class="fugue layout-3-mix"></i>
+									<i class="fugue address-book--exclamation"></i>
+									<i class="fugue fire--exclamation"></i>
+									<i class="fugue stamp--minus"></i>
+									<i class="fugue calculator-scientific"></i>
+									<i class="fugue arrow-merge-090-left"></i>
+								</div>
+							</div>
+							
+							<div class="g4">
+								<h2>Vector icons</h2>
+								
+								<div class="msg-box informative closeable">All these icons are colorable and resizable to whatever you want!</div>
+								
+								<div class="g1 field">
+									<label>Icon color: </label>
+									<div class="entry">
+										<input type="text" class="colorpicker" />
+									</div>
+								</div>
+								
+								<div class="g3 field">
+									<label>Icon size: <output for="myslider">16px</output></label>
+									<div class="entry">
+										<div class="slider {outputAfter: 'px'}" id="myslider"></div>
+									</div>
+								</div>
+							</div>
+							
+							<script>
+								jQuery(function(){
+									$('.colorpicker').data('change', function(value){
+										$('.icons').css('color', value);
+									});
+									$('#myslider').bind('slide', function(e, ui){
+										$('.icons').css({fontSize: ui.value + 'px', lineHeight: 100 + ui.value*.3 + '%'});
+									});
+								});
+							</script>
+							
+							<div class="widget minimizable g2">
+								<header>
+									<i class="glyph-icon"></i>
+									<h2><a href="http://keyamoon.com/icomoon/" target="_blank">IcoMoon</a> Limited Icon Set</h2>
+								</header>
+								<div class="widget-section">
+									<div class="content">
+										<div class="icons">
+											<span><i class="icon-home"></i>&nbsp;icon-home</span><span><i class="icon-home-2"></i>&nbsp;icon-home-2</span><span><i class="icon-home-3"></i>&nbsp;icon-home-3</span><span><i class="icon-newspaper"></i>&nbsp;icon-newspaper</span><span><i class="icon-pencil"></i>&nbsp;icon-pencil</span><span><i class="icon-pencil-2"></i>&nbsp;icon-pencil-2</span><span><i class="icon-droplet"></i>&nbsp;icon-droplet</span><span><i class="icon-picture"></i>&nbsp;icon-picture</span><span><i class="icon-picture-2"></i>&nbsp;icon-picture-2</span><span><i class="icon-camera"></i>&nbsp;icon-camera</span><span><i class="icon-music"></i>&nbsp;icon-music</span><span><i class="icon-play"></i>&nbsp;icon-play</span><span><i class="icon-film"></i>&nbsp;icon-film</span><span><i class="icon-camera-2"></i>&nbsp;icon-camera-2</span><span><i class="icon-spades"></i>&nbsp;icon-spades</span><span><i class="icon-clubs"></i>&nbsp;icon-clubs</span><span><i class="icon-diamonds"></i>&nbsp;icon-diamonds</span><span><i class="icon-broadcast"></i>&nbsp;icon-broadcast</span><span><i class="icon-microphone"></i>&nbsp;icon-microphone</span><span><i class="icon-book"></i>&nbsp;icon-book</span><span><i class="icon-paper"></i>&nbsp;icon-paper</span><span><i class="icon-paper-2"></i>&nbsp;icon-paper-2</span><span><i class="icon-new"></i>&nbsp;icon-new</span><span><i class="icon-copy"></i>&nbsp;icon-copy</span><span><i class="icon-folder"></i>&nbsp;icon-folder</span><span><i class="icon-folder-2"></i>&nbsp;icon-folder-2</span><span><i class="icon-tag"></i>&nbsp;icon-tag</span><span><i class="icon-cart"></i>&nbsp;icon-cart</span><span><i class="icon-basket"></i>&nbsp;icon-basket</span><span><i class="icon-calculate"></i>&nbsp;icon-calculate</span><span><i class="icon-support"></i>&nbsp;icon-support</span><span><i class="icon-phone"></i>&nbsp;icon-phone</span><span><i class="icon-mail"></i>&nbsp;icon-mail</span><span><i class="icon-location"></i>&nbsp;icon-location</span><span><i class="icon-compass"></i>&nbsp;icon-compass</span><span><i class="icon-history"></i>&nbsp;icon-history</span><span><i class="icon-clock"></i>&nbsp;icon-clock</span><span><i class="icon-bell"></i>&nbsp;icon-bell</span><span><i class="icon-bell-2"></i>&nbsp;icon-bell-2</span><span><i class="icon-bell-3"></i>&nbsp;icon-bell-3</span><span><i class="icon-calendar"></i>&nbsp;icon-calendar</span><span><i class="icon-mouse"></i>&nbsp;icon-mouse</span><span><i class="icon-screen"></i>&nbsp;icon-screen</span><span><i class="icon-laptop"></i>&nbsp;icon-laptop</span><span><i class="icon-mobile"></i>&nbsp;icon-mobile</span><span><i class="icon-tablet"></i>&nbsp;icon-tablet</span><span><i class="icon-mobile-2"></i>&nbsp;icon-mobile-2</span><span><i class="icon-drawer"></i>&nbsp;icon-drawer</span><span><i class="icon-drawer-2"></i>&nbsp;icon-drawer-2</span><span><i class="icon-box-add"></i>&nbsp;icon-box-add</span><span><i class="icon-box-remove"></i>&nbsp;icon-box-remove</span><span><i class="icon-database"></i>&nbsp;icon-database</span><span><i class="icon-undo"></i>&nbsp;icon-undo</span><span><i class="icon-redo"></i>&nbsp;icon-redo</span><span><i class="icon-forward"></i>&nbsp;icon-forward</span><span><i class="icon-reply"></i>&nbsp;icon-reply</span><span><i class="icon-reply-2"></i>&nbsp;icon-reply-2</span><span><i class="icon-comments"></i>&nbsp;icon-comments</span><span><i class="icon-comments-2"></i>&nbsp;icon-comments-2</span><span><i class="icon-comments-3"></i>&nbsp;icon-comments-3</span><span><i class="icon-comments-4"></i>&nbsp;icon-comments-4</span><span><i class="icon-comments-5"></i>&nbsp;icon-comments-5</span><span><i class="icon-comments-6"></i>&nbsp;icon-comments-6</span><span><i class="icon-user"></i>&nbsp;icon-user</span><span><i class="icon-user-2"></i>&nbsp;icon-user-2</span><span><i class="icon-user-3"></i>&nbsp;icon-user-3</span><span><i class="icon-busy"></i>&nbsp;icon-busy</span><span><i class="icon-loading"></i>&nbsp;icon-loading</span><span><i class="icon-loading-2"></i>&nbsp;icon-loading-2</span><span><i class="icon-search"></i>&nbsp;icon-search</span><span><i class="icon-search-2"></i>&nbsp;icon-search-2</span><span><i class="icon-zoom-in"></i>&nbsp;icon-zoom-in</span><span><i class="icon-zoom-out"></i>&nbsp;icon-zoom-out</span><span><i class="icon-key"></i>&nbsp;icon-key</span><span><i class="icon-key-2"></i>&nbsp;icon-key-2</span><span><i class="icon-locked"></i>&nbsp;icon-locked</span><span><i class="icon-unlocked"></i>&nbsp;icon-unlocked</span><span><i class="icon-wrench"></i>&nbsp;icon-wrench</span><span><i class="icon-equalizer"></i>&nbsp;icon-equalizer</span><span><i class="icon-cog"></i>&nbsp;icon-cog</span><span><i class="icon-pie"></i>&nbsp;icon-pie</span><span><i class="icon-bars"></i>&nbsp;icon-bars</span><span><i class="icon-stats-up"></i>&nbsp;icon-stats-up</span><span><i class="icon-gift"></i>&nbsp;icon-gift</span><span><i class="icon-trophy"></i>&nbsp;icon-trophy</span><span><i class="icon-diamond"></i>&nbsp;icon-diamond</span><span><i class="icon-coffee"></i>&nbsp;icon-coffee</span><span><i class="icon-rocket"></i>&nbsp;icon-rocket</span><span><i class="icon-meter-slow"></i>&nbsp;icon-meter-slow</span><span><i class="icon-meter-medium"></i>&nbsp;icon-meter-medium</span><span><i class="icon-meter-fast"></i>&nbsp;icon-meter-fast</span><span><i class="icon-dashboard"></i>&nbsp;icon-dashboard</span><span><i class="icon-fire"></i>&nbsp;icon-fire</span><span><i class="icon-lab"></i>&nbsp;icon-lab</span><span><i class="icon-remove"></i>&nbsp;icon-remove</span><span><i class="icon-remove-2"></i>&nbsp;icon-remove-2</span><span><i class="icon-remove-3"></i>&nbsp;icon-remove-3</span><span><i class="icon-briefcase"></i>&nbsp;icon-briefcase</span><span><i class="icon-briefcase-2"></i>&nbsp;icon-briefcase-2</span><span><i class="icon-cars"></i>&nbsp;icon-cars</span><span><i class="icon-bus"></i>&nbsp;icon-bus</span><span><i class="icon-cube"></i>&nbsp;icon-cube</span><span><i class="icon-cube-2"></i>&nbsp;icon-cube-2</span><span><i class="icon-puzzle"></i>&nbsp;icon-puzzle</span><span><i class="icon-glasses"></i>&nbsp;icon-glasses</span><span><i class="icon-glasses-2"></i>&nbsp;icon-glasses-2</span><span><i class="icon-accessibility"></i>&nbsp;icon-accessibility</span><span><i class="icon-accessibility-2"></i>&nbsp;icon-accessibility-2</span><span><i class="icon-target"></i>&nbsp;icon-target</span><span><i class="icon-target-2"></i>&nbsp;icon-target-2</span><span><i class="icon-lightning"></i>&nbsp;icon-lightning</span><span><i class="icon-power"></i>&nbsp;icon-power</span><span><i class="icon-power-2"></i>&nbsp;icon-power-2</span><span><i class="icon-clipboard"></i>&nbsp;icon-clipboard</span><span><i class="icon-clipboard-2"></i>&nbsp;icon-clipboard-2</span><span><i class="icon-playlist"></i>&nbsp;icon-playlist</span><span><i class="icon-grid-view"></i>&nbsp;icon-grid-view</span><span><i class="icon-tree-view"></i>&nbsp;icon-tree-view</span><span><i class="icon-menu"></i>&nbsp;icon-menu</span><span><i class="icon-menu-2"></i>&nbsp;icon-menu-2</span><span><i class="icon-cloud"></i>&nbsp;icon-cloud</span><span><i class="icon-cloud-2"></i>&nbsp;icon-cloud-2</span><span><i class="icon-download"></i>&nbsp;icon-download</span><span><i class="icon-upload"></i>&nbsp;icon-upload</span><span><i class="icon-upload-2"></i>&nbsp;icon-upload-2</span><span><i class="icon-link"></i>&nbsp;icon-link</span><span><i class="icon-link-2"></i>&nbsp;icon-link-2</span><span><i class="icon-flag"></i>&nbsp;icon-flag</span><span><i class="icon-flag-2"></i>&nbsp;icon-flag-2</span><span><i class="icon-flag-3"></i>&nbsp;icon-flag-3</span><span><i class="icon-eye"></i>&nbsp;icon-eye</span><span><i class="icon-eye-2"></i>&nbsp;icon-eye-2</span><span><i class="icon-bookmark"></i>&nbsp;icon-bookmark</span><span><i class="icon-bookmark-2"></i>&nbsp;icon-bookmark-2</span><span><i class="icon-star"></i>&nbsp;icon-star</span><span><i class="icon-star-2"></i>&nbsp;icon-star-2</span><span><i class="icon-star-3"></i>&nbsp;icon-star-3</span><span><i class="icon-heart"></i>&nbsp;icon-heart</span><span><i class="icon-heart-2"></i>&nbsp;icon-heart-2</span><span><i class="icon-thumbs-up"></i>&nbsp;icon-thumbs-up</span><span><i class="icon-thumbs-down"></i>&nbsp;icon-thumbs-down</span><span><i class="icon-happy"></i>&nbsp;icon-happy</span><span><i class="icon-smiley"></i>&nbsp;icon-smiley</span><span><i class="icon-neutral"></i>&nbsp;icon-neutral</span><span><i class="icon-plus"></i>&nbsp;icon-plus</span><span><i class="icon-minus"></i>&nbsp;icon-minus</span><span><i class="icon-help"></i>&nbsp;icon-help</span><span><i class="icon-help-2"></i>&nbsp;icon-help-2</span><span><i class="icon-info"></i>&nbsp;icon-info</span><span><i class="icon-blocked"></i>&nbsp;icon-blocked</span><span><i class="icon-cancel"></i>&nbsp;icon-cancel</span><span><i class="icon-cancel-2"></i>&nbsp;icon-cancel-2</span><span><i class="icon-cancel-3"></i>&nbsp;icon-cancel-3</span><span><i class="icon-checkmark"></i>&nbsp;icon-checkmark</span><span><i class="icon-minus-2"></i>&nbsp;icon-minus-2</span><span><i class="icon-plus-2"></i>&nbsp;icon-plus-2</span><span><i class="icon-enter"></i>&nbsp;icon-enter</span><span><i class="icon-exit"></i>&nbsp;icon-exit</span><span><i class="icon-loop"></i>&nbsp;icon-loop</span><span><i class="icon-arrow-up"></i>&nbsp;icon-arrow-up</span><span><i class="icon-arrow-right"></i>&nbsp;icon-arrow-right</span><span><i class="icon-arrow-down"></i>&nbsp;icon-arrow-down</span><span><i class="icon-arrow-left"></i>&nbsp;icon-arrow-left</span><span><i class="icon-arrow-up-left"></i>&nbsp;icon-arrow-up-left</span><span><i class="icon-arrow-up-2"></i>&nbsp;icon-arrow-up-2</span><span><i class="icon-arrow-up-right"></i>&nbsp;icon-arrow-up-right</span><span><i class="icon-arrow-right-2"></i>&nbsp;icon-arrow-right-2</span><span><i class="icon-arrow-down-right"></i>&nbsp;icon-arrow-down-right</span><span><i class="icon-arrow-down-2"></i>&nbsp;icon-arrow-down-2</span><span><i class="icon-arrow-down-left"></i>&nbsp;icon-arrow-down-left</span><span><i class="icon-arrow-left-2"></i>&nbsp;icon-arrow-left-2</span><span><i class="icon-arrow-up-left-2"></i>&nbsp;icon-arrow-up-left-2</span><span><i class="icon-arrow-up-3"></i>&nbsp;icon-arrow-up-3</span><span><i class="icon-arrow-up-right-2"></i>&nbsp;icon-arrow-up-right-2</span><span><i class="icon-arrow-right-3"></i>&nbsp;icon-arrow-right-3</span><span><i class="icon-arrow-down-right-2"></i>&nbsp;icon-arrow-down-right-2</span><span><i class="icon-arrow-down-3"></i>&nbsp;icon-arrow-down-3</span><span><i class="icon-arrow-down-left-2"></i>&nbsp;icon-arrow-down-left-2</span><span><i class="icon-arrow-left-3"></i>&nbsp;icon-arrow-left-3</span><span><i class="icon-arrow-up-left-3"></i>&nbsp;icon-arrow-up-left-3</span><span><i class="icon-arrow-up-4"></i>&nbsp;icon-arrow-up-4</span><span><i class="icon-arrow-up-right-3"></i>&nbsp;icon-arrow-up-right-3</span><span><i class="icon-arrow-right-4"></i>&nbsp;icon-arrow-right-4</span><span><i class="icon-arrow-down-right-3"></i>&nbsp;icon-arrow-down-right-3</span><span><i class="icon-arrow-down-4"></i>&nbsp;icon-arrow-down-4</span><span><i class="icon-arrow-down-left-3"></i>&nbsp;icon-arrow-down-left-3</span><span><i class="icon-arrow-left-4"></i>&nbsp;icon-arrow-left-4</span><span><i class="icon-arrow-up-5"></i>&nbsp;icon-arrow-up-5</span><span><i class="icon-arrow-right-5"></i>&nbsp;icon-arrow-right-5</span><span><i class="icon-arrow-down-5"></i>&nbsp;icon-arrow-down-5</span><span><i class="icon-arrow-left-5"></i>&nbsp;icon-arrow-left-5</span><span><i class="icon-arrow-up-6"></i>&nbsp;icon-arrow-up-6</span><span><i class="icon-arrow-right-6"></i>&nbsp;icon-arrow-right-6</span><span><i class="icon-arrow-down-6"></i>&nbsp;icon-arrow-down-6</span><span><i class="icon-arrow-left-6"></i>&nbsp;icon-arrow-left-6</span><span><i class="icon-arrow-up-7"></i>&nbsp;icon-arrow-up-7</span><span><i class="icon-arrow-right-7"></i>&nbsp;icon-arrow-right-7</span><span><i class="icon-arrow-down-7"></i>&nbsp;icon-arrow-down-7</span><span><i class="icon-arrow-left-7"></i>&nbsp;icon-arrow-left-7</span><span><i class="icon-menu-3"></i>&nbsp;icon-menu-3</span><span><i class="icon-enter-2"></i>&nbsp;icon-enter-2</span><span><i class="icon-backspace"></i>&nbsp;icon-backspace</span><span><i class="icon-backspace-2"></i>&nbsp;icon-backspace-2</span><span><i class="icon-tab"></i>&nbsp;icon-tab</span><span><i class="icon-tab-2"></i>&nbsp;icon-tab-2</span><span><i class="icon-checkbox"></i>&nbsp;icon-checkbox</span><span><i class="icon-checkbox-unchecked"></i>&nbsp;icon-checkbox-unchecked</span><span><i class="icon-checkbox-partial"></i>&nbsp;icon-checkbox-partial</span><span><i class="icon-radio-checked"></i>&nbsp;icon-radio-checked</span><span><i class="icon-radio-unchecked"></i>&nbsp;icon-radio-unchecked</span><span><i class="icon-font"></i>&nbsp;icon-font</span><span><i class="icon-paragraph-left"></i>&nbsp;icon-paragraph-left</span><span><i class="icon-paragraph-center"></i>&nbsp;icon-paragraph-center</span><span><i class="icon-paragraph-right"></i>&nbsp;icon-paragraph-right</span><span><i class="icon-left-to-right"></i>&nbsp;icon-left-to-right</span><span><i class="icon-right-to-left"></i>&nbsp;icon-right-to-left</span><span><i class="icon-out"></i>&nbsp;icon-out</span><span><i class="icon-out-2"></i>&nbsp;icon-out-2</span><span><i class="icon-embed"></i>&nbsp;icon-embed</span><span><i class="icon-seven-segment"></i>&nbsp;icon-seven-segment</span><span><i class="icon-seven-segment-2"></i>&nbsp;icon-seven-segment-2</span><span><i class="icon-seven-segment-3"></i>&nbsp;icon-seven-segment-3</span><span><i class="icon-seven-segment-4"></i>&nbsp;icon-seven-segment-4</span><span><i class="icon-seven-segment-5"></i>&nbsp;icon-seven-segment-5</span><span><i class="icon-seven-segment-6"></i>&nbsp;icon-seven-segment-6</span><span><i class="icon-seven-segment-7"></i>&nbsp;icon-seven-segment-7</span><span><i class="icon-seven-segment-8"></i>&nbsp;icon-seven-segment-8</span><span><i class="icon-seven-segment-9"></i>&nbsp;icon-seven-segment-9</span><span><i class="icon-seven-segment-10"></i>&nbsp;icon-seven-segment-10</span><span><i class="icon-bluetooth"></i>&nbsp;icon-bluetooth</span><span><i class="icon-share"></i>&nbsp;icon-share</span><span><i class="icon-share-2"></i>&nbsp;icon-share-2</span><span><i class="icon-mail-2"></i>&nbsp;icon-mail-2</span><span><i class="icon-google-plus"></i>&nbsp;icon-google-plus</span><span><i class="icon-google-plus-2"></i>&nbsp;icon-google-plus-2</span><span><i class="icon-google-plus-3"></i>&nbsp;icon-google-plus-3</span><span><i class="icon-facebook"></i>&nbsp;icon-facebook</span><span><i class="icon-facebook-2"></i>&nbsp;icon-facebook-2</span><span><i class="icon-twitter"></i>&nbsp;icon-twitter</span><span><i class="icon-twitter-2"></i>&nbsp;icon-twitter-2</span><span><i class="icon-twitter-3"></i>&nbsp;icon-twitter-3</span><span><i class="icon-twitter-4"></i>&nbsp;icon-twitter-4</span><span><i class="icon-feed"></i>&nbsp;icon-feed</span><span><i class="icon-feed-2"></i>&nbsp;icon-feed-2</span><span><i class="icon-youtube"></i>&nbsp;icon-youtube</span><span><i class="icon-youtube-2"></i>&nbsp;icon-youtube-2</span><span><i class="icon-vimeo"></i>&nbsp;icon-vimeo</span><span><i class="icon-vimeo-2"></i>&nbsp;icon-vimeo-2</span><span><i class="icon-flickr"></i>&nbsp;icon-flickr</span><span><i class="icon-flickr-2"></i>&nbsp;icon-flickr-2</span><span><i class="icon-picassa"></i>&nbsp;icon-picassa</span><span><i class="icon-picassa-2"></i>&nbsp;icon-picassa-2</span><span><i class="icon-dribbble"></i>&nbsp;icon-dribbble</span><span><i class="icon-dribbble-2"></i>&nbsp;icon-dribbble-2</span><span><i class="icon-forrst"></i>&nbsp;icon-forrst</span><span><i class="icon-forrst-2"></i>&nbsp;icon-forrst-2</span><span><i class="icon-deviantart"></i>&nbsp;icon-deviantart</span><span><i class="icon-deviantart-2"></i>&nbsp;icon-deviantart-2</span><span><i class="icon-github"></i>&nbsp;icon-github</span><span><i class="icon-github-2"></i>&nbsp;icon-github-2</span><span><i class="icon-github-3"></i>&nbsp;icon-github-3</span><span><i class="icon-github-4"></i>&nbsp;icon-github-4</span><span><i class="icon-wordpress"></i>&nbsp;icon-wordpress</span><span><i class="icon-wordpress-2"></i>&nbsp;icon-wordpress-2</span><span><i class="icon-blogger"></i>&nbsp;icon-blogger</span><span><i class="icon-blogger-2"></i>&nbsp;icon-blogger-2</span><span><i class="icon-tumblr"></i>&nbsp;icon-tumblr</span><span><i class="icon-tumblr-2"></i>&nbsp;icon-tumblr-2</span><span><i class="icon-yahoo"></i>&nbsp;icon-yahoo</span><span><i class="icon-yahoo-2"></i>&nbsp;icon-yahoo-2</span><span><i class="icon-amazon"></i>&nbsp;icon-amazon</span><span><i class="icon-amazon-2"></i>&nbsp;icon-amazon-2</span><span><i class="icon-apple"></i>&nbsp;icon-apple</span><span><i class="icon-android"></i>&nbsp;icon-android</span><span><i class="icon-windows"></i>&nbsp;icon-windows</span><span><i class="icon-soundcloud"></i>&nbsp;icon-soundcloud</span><span><i class="icon-soundcloud-2"></i>&nbsp;icon-soundcloud-2</span><span><i class="icon-skype"></i>&nbsp;icon-skype</span><span><i class="icon-reddit"></i>&nbsp;icon-reddit</span><span><i class="icon-linkedin"></i>&nbsp;icon-linkedin</span><span><i class="icon-lastfm"></i>&nbsp;icon-lastfm</span><span><i class="icon-lastfm-2"></i>&nbsp;icon-lastfm-2</span><span><i class="icon-delicious"></i>&nbsp;icon-delicious</span><span><i class="icon-stumbleupon"></i>&nbsp;icon-stumbleupon</span><span><i class="icon-stumbleupon-2"></i>&nbsp;icon-stumbleupon-2</span><span><i class="icon-pinterest"></i>&nbsp;icon-pinterest</span><span><i class="icon-pinterest-2"></i>&nbsp;icon-pinterest-2</span><span><i class="icon-xing"></i>&nbsp;icon-xing</span><span><i class="icon-libreoffice"></i>&nbsp;icon-libreoffice</span><span><i class="icon-file-pdf"></i>&nbsp;icon-file-pdf</span><span><i class="icon-file-openoffice"></i>&nbsp;icon-file-openoffice</span><span><i class="icon-file-word"></i>&nbsp;icon-file-word</span><span><i class="icon-file-excel"></i>&nbsp;icon-file-excel</span><span><i class="icon-file-powerpoint"></i>&nbsp;icon-file-powerpoint</span><span><i class="icon-file-xml"></i>&nbsp;icon-file-xml</span><span><i class="icon-file-css"></i>&nbsp;icon-file-css</span><span><i class="icon-html5"></i>&nbsp;icon-html5</span><span><i class="icon-html5-2"></i>&nbsp;icon-html5-2</span><span><i class="icon-css3"></i>&nbsp;icon-css3</span><span><i class="icon-IcoMoon"></i>&nbsp;icon-IcoMoon</span>
+										</div>
+										<div class="cf"></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="widget minimizable g2">
+								<header>
+									<i class="glyph-icon"></i>
+									<h2><a href="http://www.justbenicestudio.com/studio/websymbols/" target="_blank">WebSymbols</a> Icon Set</h2>
+								</header>
+								<div class="widget-section">
+									<div class="content">
+										<div class="icons">
+											<span><i class="glyph-image"></i>&nbsp;glyph-image</span><span><i class="glyph-settings"></i>&nbsp;glyph-settings</span><span><i class="glyph-cloud"></i>&nbsp;glyph-cloud</span><span><i class="glyph-archive"></i>&nbsp;glyph-archive</span><span><i class="glyph-movie"></i>&nbsp;glyph-movie</span><span><i class="glyph-html-code"></i>&nbsp;glyph-html-code</span><span><i class="glyph-text"></i>&nbsp;glyph-text</span><span><i class="glyph-terminal"></i>&nbsp;glyph-terminal</span><span><i class="glyph-attachment"></i>&nbsp;glyph-attachment</span><span><i class="glyph-logout"></i>&nbsp;glyph-logout</span><span><i class="glyph-indent"></i>&nbsp;glyph-indent</span><span><i class="glyph-outdent"></i>&nbsp;glyph-outdent</span><span><i class="glyph-list"></i>&nbsp;glyph-list</span><span><i class="glyph-number-list"></i>&nbsp;glyph-number-list</span><span><i class="glyph-move"></i>&nbsp;glyph-move</span><span><i class="glyph-user"></i>&nbsp;glyph-user</span><span><i class="glyph-opened-lock"></i>&nbsp;glyph-opened-lock</span><span><i class="glyph-closed-lock"></i>&nbsp;glyph-closed-lock</span><span><i class="glyph-portrait-view"></i>&nbsp;glyph-portrait-view</span><span><i class="glyph-album-view"></i>&nbsp;glyph-album-view</span><span><i class="glyph-center"></i>&nbsp;glyph-center</span><span><i class="glyph-zoom-in"></i>&nbsp;glyph-zoom-in</span><span><i class="glyph-zoom-out"></i>&nbsp;glyph-zoom-out</span><span><i class="glyph-up"></i>&nbsp;glyph-up</span><span><i class="glyph-down"></i>&nbsp;glyph-down</span><span><i class="glyph-close"></i>&nbsp;glyph-close</span><span><i class="glyph-scale"></i>&nbsp;glyph-scale</span><span><i class="glyph-back"></i>&nbsp;glyph-back</span><span><i class="glyph-forward"></i>&nbsp;glyph-forward</span><span><i class="glyph-back-2"></i>&nbsp;glyph-back-2</span><span><i class="glyph-forward-2"></i>&nbsp;glyph-forward-2</span><span><i class="glyph-rotate"></i>&nbsp;glyph-rotate</span><span><i class="glyph-close-2"></i>&nbsp;glyph-close-2</span><span><i class="glyph-twitter"></i>&nbsp;glyph-twitter</span><span><i class="glyph-facebook"></i>&nbsp;glyph-facebook</span><span><i class="glyph-vkontakte"></i>&nbsp;glyph-vkontakte</span><span><i class="glyph-linked-in"></i>&nbsp;glyph-linked-in</span><span><i class="glyph-skype"></i>&nbsp;glyph-skype</span><span><i class="glyph-rss"></i>&nbsp;glyph-rss</span><span><i class="glyph-vimeo"></i>&nbsp;glyph-vimeo</span><span><i class="glyph-youtube"></i>&nbsp;glyph-youtube</span><span><i class="glyph-tumblr"></i>&nbsp;glyph-tumblr</span><span><i class="glyph-lettery"></i>&nbsp;glyph-lettery</span><span><i class="glyph-odnoklassniki"></i>&nbsp;glyph-odnoklassniki</span><span><i class="glyph-rss-2"></i>&nbsp;glyph-rss-2</span><span><i class="glyph-favorite"></i>&nbsp;glyph-favorite</span><span><i class="glyph-tag"></i>&nbsp;glyph-tag</span><span><i class="glyph-comment"></i>&nbsp;glyph-comment</span><span><i class="glyph-chat"></i>&nbsp;glyph-chat</span><span><i class="glyph-opened-chat"></i>&nbsp;glyph-opened-chat</span><span><i class="glyph-rating"></i>&nbsp;glyph-rating</span><span><i class="glyph-map-pin"></i>&nbsp;glyph-map-pin</span><span><i class="glyph-like"></i>&nbsp;glyph-like</span><span><i class="glyph-unlike"></i>&nbsp;glyph-unlike</span><span><i class="glyph-search"></i>&nbsp;glyph-search</span><span><i class="glyph-reblog"></i>&nbsp;glyph-reblog</span><span><i class="glyph-open-in-new-window"></i>&nbsp;glyph-open-in-new-window</span><span><i class="glyph-clock"></i>&nbsp;glyph-clock</span><span><i class="glyph-link"></i>&nbsp;glyph-link</span><span><i class="glyph-mail"></i>&nbsp;glyph-mail</span><span><i class="glyph-sort"></i>&nbsp;glyph-sort</span><span><i class="glyph-sort-2"></i>&nbsp;glyph-sort-2</span><span><i class="glyph-unfold"></i>&nbsp;glyph-unfold</span><span><i class="glyph-fold"></i>&nbsp;glyph-fold</span><span><i class="glyph-icon"></i>&nbsp;glyph-icon</span><span><i class="glyph-list-2"></i>&nbsp;glyph-list-2</span><span><i class="glyph-list-with-icons"></i>&nbsp;glyph-list-with-icons</span><span><i class="glyph-reply"></i>&nbsp;glyph-reply</span><span><i class="glyph-reply-all"></i>&nbsp;glyph-reply-all</span><span><i class="glyph-forward-3"></i>&nbsp;glyph-forward-3</span><span><i class="glyph-fullscreen"></i>&nbsp;glyph-fullscreen</span><span><i class="glyph-done"></i>&nbsp;glyph-done</span><span><i class="glyph-approved"></i>&nbsp;glyph-glyph-approved</span><span><i class="glyph-attention"></i>&nbsp;glyph-glyph-attention</span><span><i class="glyph-synchronize"></i>&nbsp;glyph-glyph-synchronize</span>
+										</div>
+										<div class="cf"></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="cf"></div>
+						</div>
+					</section>
+				</section>
+			</section>
+		</div>
+		<a href="#" id="top-scroller" title="back to top of the page">back to top</a>
+	</body>
+</html>

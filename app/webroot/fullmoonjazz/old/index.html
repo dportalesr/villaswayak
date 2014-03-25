@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Full moon jazz</title>
+<style type="text/css">
+body{
+	width:100%;
+	height:100%;
+	min-height:auto !important;
+	padding: 0;
+	margin: 0 ;
+	text-align:center;
+	background:#000;
+	
+	}
+
+.txt{
+	position:absolute;
+	height:23px;
+	width:280px;
+	margin-top:-68px;
+	margin-left:-28px;
+	border:hidden;
+	}
+.txt2{
+	position:absolute;
+	height:23px;
+	width:280px;
+	margin-top:-27px;
+	margin-left:-28px;
+	border:hidden;
+	}		
+.txt3{
+	position:absolute;
+	height:53px;
+	width:280px;
+	margin-left:-28px;
+	margin-top:16px;
+	z-index:1;
+	border:hidden;
+	}
+#btnsend{
+	background:url(images/BotonSend.jpg);
+	width:98px;
+	height:31px;
+	position:relative;
+	margin-left:410px;
+	margin-top:-30px;
+	z-index:5;
+	border:hidden;
+	cursor:pointer;
+	clear:both
+	}		
+	
+</style>
+<script type="text/javascript" src="lib/jquery-1.9.0.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.4"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.4" media="screen" />
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			});
+	</script>
+    <script>
+function mailtome(){
+	//alert('llege?');
+	var info = $('#form').serialize();
+	$.ajax
+		({
+		type: "POST",
+		url: "mail.php?",
+		data: "accion2=mail&"+info,
+		success: function(info){
+		//div.html(datos);
+		alert(info);
+		}
+		});
+	//alert(info)
+}</script>
+</head>
+
+<body>
+<form id="form">
+<table width="1600" height="1200" border="0" cellspacing="0" cellpadding="0" background="images/fullmoonjazz.jpg" align="center" >
+  <tr>
+    <th scope="col" align="center">
+    <table width="800" border="0" height="230" cellspacing="0" cellpadding="0" style="margin-top:245px;">
+  <tr>
+    <th scope="col" width="510" ><input type="text" class="txt" id="nombre" name="nombre" />
+    <input type="text" id="mail" name="mail"  class="txt2" />
+    <textarea id="about" name="about" class="txt3"></textarea>
+   
+    </th>
+    <tr>
+    <th scope="col" width="510" height="110" ><input type="button" value="" id="btnsend" onclick="mailtome();" />
+   
+    </th>
+    <th scope="col">
+    <a href="#" style="margin-left:-10px"><img src="images/BotonPop-up.jpg" /></a>
+    
+    
+    <!--<a class="fancybox-effects-b" href="#" style="margin-left:-10px"><img src="images/BotonPop-up.jpg" /></a>--></th>
+  </tr>
+</table>
+</th>
+    <th scope="col"></th>
+  </tr>
+</table></form>
+</body>
+</html>
