@@ -168,7 +168,15 @@ h3:first-child, h3.alpha { margin-top:0; }
 	overflow: hidden;
 }
 
-/*.c_palm #logo a { background:transparent url(/img/ultimate.png) no-repeat center center; }*/
+.c_palm #logo {
+	background:transparent url(/img/logo_bg_ultimate.png) repeat-x top center;
+	box-shadow:none;
+	border-radius:0;
+}
+.c_palm #logo a {
+	background:transparent url(/img/logo_ultimate.png) no-repeat center center;
+}
+
 .social {
 	float:right;
 	width:82px;
