@@ -223,6 +223,14 @@ h3:first-child, h3.alpha { margin-top:0; }
 .c_desarrollo #bg_showcase img,
 .c_palm #bg_showcase img { position:absolute; }
 
+.palm_logo {
+	display: block;
+	padding: 20px;
+	margin:10px auto 20px auto;
+	background-color: #114024;
+	box-shadow:0 0 3px #114024, 0 0 6px #114024, 0 0 12px #114024, 0 0 18px #114024
+}
+
 .tweets {
 	float:right;
 	padding:0 32px 5px 96px;

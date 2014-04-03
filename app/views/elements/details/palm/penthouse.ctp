@@ -9,6 +9,7 @@ echo
 				$html->para(null,'Vive el privilegio de vivir en nuestra Torre de Departamentos más lujosa.'),
 				$html->para(null,'Con la calidad y cuidado que nos caracteriza en todo nuestro Desarrollo, en Palm, enfatizamos el lujo en cada espacio, detalles especialmente pensados para  crear un entorno con clase.'),
 
+				$html->image('palm.png',array('alt'=>'palm.png','class'=>'palm_logo')),
 				$this->element('hidden_gallery',compact('album')),
 				$html->link('Ver Planta Arquitectónica','/img/plantas/palm/penthouse.png',array('class'=>'pulsembox','rel'=>'penthouse','name'=>'Penthouse')),
 				$html->div('hide',$html->link('','/img/plantas/palm/solarium.png',array('class'=>'pulsembox','rel'=>'penthouse','name'=>'Solarium (Penthouse)'))),
