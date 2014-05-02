@@ -33,17 +33,17 @@ class DesarrolloController extends MyController{
 	/* Palm */
 	function pentgarden(){
 		$this->set('sub_for_layout','palm');
-		$this->set_albums();
+		$this->set_albums('palm');
 		$this->render('/desarrollo/palm');
 	}
 	function palm_departamentos(){
 		$this->set('sub_for_layout','palm');
-		$this->set_albums();
+		$this->set_albums('palm');
 		$this->render('/desarrollo/palm');
 	}
 	function palm_penthouse(){
 		$this->set('sub_for_layout','palm');
-		$this->set_albums();
+		$this->set_albums('palm');
 		$this->render('/desarrollo/palm');
 	}
 
@@ -60,7 +60,7 @@ class DesarrolloController extends MyController{
 			'palm'=>array('palm_penthouse'=>8, 'palm_departamentos'=>7, 'pentgarden'=>6)
 		);
 
-		$tmp =$album_ids[$section];
+		$tmp = $album_ids[$section];
 		foreach ($tmp as $key => $album_id)
 			$albums[$key] = $this->Album->find_(array($album_id,'contain'=>array('Albumimg')));
 		

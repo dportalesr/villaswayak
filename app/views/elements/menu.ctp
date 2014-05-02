@@ -19,7 +19,7 @@ foreach(Configure::read('Modules') as $cntllr => $mod){
 				case 'desarrollo':
 					$rootUrl = array('controller'=>'desarrollo','action'=>'departamentos');
 					$submenu = 	$html->tag('li',$html->link('Villas',array('controller'=>'desarrollo','action'=>'jaal_ha')),array('class'=>$sub_for_layout == 'villas' ? 'selected':'')).
-											$html->tag('li',$html->link('Departamentos',array('controller'=>'desarrollo','action'=>'departamentos')),array('class'=>$sub_for_layout == 'departamentos' ? 'selected':'')).
+											$html->tag('li',$html->link('Xel-Há',array('controller'=>'desarrollo','action'=>'departamentos')),array('class'=>$sub_for_layout == 'departamentos' ? 'selected':'')).
 											$html->tag('li',$html->link('Palm',array('controller'=>'desarrollo','action'=>'pentgarden')),array('class'=>$sub_for_layout == 'palm' ? 'selected':'')).
 											$html->tag('li',$html->link('Amenidades',array('controller'=>'desarrollo','action'=>'amenidades')),array('class'=>$sub_for_layout == 'amenidades' ? 'selected':''));
 								

@@ -5,6 +5,7 @@ class PalmController extends MyController{
 	var $uses = array('Album');
 
 	function index(){ $this->redirect(array('action'=>'niveles')); }
+	// function pentgarden(){ $this->set('sub_for_layout','pentgarden');$this->set_albums();$this->render('/palm/index'); }
 	function niveles(){ $this->set('sub_for_layout','niveles');$this->set_albums();$this->render('/palm/index'); }
 	function penthouse(){ $this->set('sub_for_layout','penthouse');$this->set_albums();$this->render('/palm/index'); }
 	

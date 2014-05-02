@@ -16,7 +16,7 @@ echo
 		(function(){ this.fade(0);(function(){ this.fade(0); }).periodical(16000,this); }).delay(4000,irreg);
 		(function(){ this.fade(1); }).periodical(16000,irreg);
 
-		pulsembox.binder($("modal"));
+		'.(empty($hide_popup) ? 'pulsembox.binder($("modal"));(pulsembox.close).delay(6000,pulsembox);' : '').'
 	');
 ?>
 </div>

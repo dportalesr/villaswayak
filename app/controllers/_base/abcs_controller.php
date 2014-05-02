@@ -76,10 +76,6 @@ class AbcsController extends MyController{
 			$this->m[0]->clean($habtmData,true);
 			$this->set(Inflector::tableize($habtmModel),$habtmData);
 		}
-		
-		if(!file_exists(VIEWS.$this->viewPath.DS.'admin_editar.ctp')){
-			$this->detour('_base','admin_agregar');
-		}
 	}
 	
 	function admin_editar($id) {
@@ -121,7 +117,7 @@ class AbcsController extends MyController{
 		}
 
 		if(!file_exists(VIEWS.$this->viewPath.DS.'admin_editar.ctp')){
-			$this->detour(false,'admin_agregar');
+			$this->detour('_base','admin_agregar');
 		}
 	}
 }

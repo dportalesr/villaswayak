@@ -16,6 +16,7 @@ echo
 		//-----
 		$html->div('column',null,array('id'=>'column2')),
 			$html->div('pad'),
+				// $html->tag('h3','Naay-Há','title title1 subtitle'),
 				$html->tag('ul'),
 					$html->tag('li','2 Plantas'),
 					$html->tag('li','200 m2 de construcción.'),
@@ -44,7 +45,7 @@ echo
 				'</ul>',
 					
 				$html->div('title title3','Penthouse'),
-				$html->tag('ul'),
+				$html->tag('ul',null,'omega'),
 					$html->tag('li','Amplia recámara Principal.'),
 					$html->tag('li','Sala privada en recámara principal.'),
 				'</ul>',

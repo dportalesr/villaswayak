@@ -143,9 +143,12 @@ var Pulsembox = new Class({
 					}
 				}
 
+				
+				
+
 				if((!found) && gallength > 0){
 					this.current = 0;
-					this.isReady = true;
+					this.isReady = true; 
 					this.change(this.getInfo(0,this.galleries[rel][0],'',''),rel);
 					return;
 				}
@@ -217,7 +220,7 @@ var Pulsembox = new Class({
 					
 				}.bind(this),
 				'error': function(){
-					this.isReady = true;
+					this.isReady = true;  
 					
 					if(this.rel){
 						var spliced = this.galleries[this.rel].splice(this.current,1);
@@ -259,7 +262,7 @@ var Pulsembox = new Class({
 			srcimg.src = url;
 		
 		} else { /// Es HTML
-			
+
 			this.isHTML = true;
 			var queryString = (matchURL = url.match(/\?(.+)/)) ? matchURL[1]:false; //var queryString = url.match(/\?(.+)/)[1];
 			var params = this.getParams(queryString);
@@ -302,7 +305,7 @@ var Pulsembox = new Class({
 		} 
 	},
 	failure: function(msg){
-		this.isReady = true;
+		this.isReady = true;  
 		msg = msg || 'Hubo un problema para mostrar el contenido.';
 		alert(msg);
 		this.close();
@@ -326,7 +329,7 @@ var Pulsembox = new Class({
 
 		/// Opacity
 		var afterShow = function(){
-			this.isReady = true;
+			this.isReady = true; 
 			if(!this.isHTML){
 				this.imgFx.start(1);
 				this.captionFx.start(1);
@@ -386,7 +389,8 @@ var Pulsembox = new Class({
 	},
 	close: function(){
 		if(!this.isReady) return false;
-		this.isReady = false;
+
+		this.isReady = false; 
 		this.isVisible = false;
 		
 		if($('PboxPrev')) $("PboxPrev").removeEvents();
@@ -401,7 +405,7 @@ var Pulsembox = new Class({
 			
 			this.overlayFx.start(0).chain(function(){
 				$$('#PboxOverlay,#Pulsembox').setStyle('display','none');
-				this.isReady = true;
+				this.isReady = true;  
 			}.bind(this));
 		}.bind(this));
 	},

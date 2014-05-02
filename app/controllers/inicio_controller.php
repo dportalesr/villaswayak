@@ -7,10 +7,19 @@ class InicioController extends MyController {
 	function index(){
 		$carrusel = $this->Carousel->find_(array('order'=>'orden ASC'));
 		$banner = $this->Banner->find_(null,'first');
-		fb($banner,'$banner');
 		$this->set(compact('carrusel','banner'));
 
 		$this->pageTitle = Configure::read('Site.slogan');
+		// $this->Session->delete('hide_home_popup');
+		// fb($this->Session->read('hide_home_popup'),'hide_home_popup');
+		
+		if(!$hide_popup = $this->Session->check('hide_home_popup')){
+			$this->Session->write('hide_home_popup', 'yeah!');
+		}
+
+		$hide_popup = $hide_popup || !$banner;
+
+		$this->set(compact('hide_popup'));
 	}
 	
 	function email(){ $this->layout = 'empty'; }
